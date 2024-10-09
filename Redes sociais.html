@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="redesSociais.css">
+    <link rel="icon" type="image/png" href="social-media.png">
+    <title>Redes Sociais</title>
+</head>
+<body>
+    <!-- Botão de Voltar -->
+    <a href="inicial main.html" class="back-button">Voltar</a>
+
+    <div class="social-container">
+        <div class="social-left">
+            <a href="https://www.instagram.com/b3rnardo_15/" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://github.com/b3rnardo15" target="_blank" class="social-icon github">GitHub</a>
+        </div>
+
+        <div class="center-image">
+            <img src="imagemprofile/dragao branco.png" alt="Imagem Central" class="central-img">
+        </div>
+
+        <div class="social-right">
+            <a href="mailto:bernardo0simoes@gmail.com?subject=Bernardo%20Sim%C3%B5es&body=Ol%C3%A1%20Bernardo." target="_blank" class="social-icon linkedin">E-mail</a>
+            <a href="https://api.whatsapp.com/send/?phone=5581985605505&text=Ol%C3%A1+Bernardo%2C+tudo+bem%3F&type=phone_number&app_absent=0" target="_blank" class="social-icon whatsapp">Whatsapp</a>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div> 
+
+    <!-- Formulário -->
+    <div class="container mt-5">
+        <header>
+            <div class="header-container">
+                <h1 style="text-align: left !important;">Formulário de Contato</h1>
+            </div>
+        </header>
+        <fieldset>
+            <legend class="text-white">Formulário de Contato</legend>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">Nome:</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Sobrenome:</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="language">Língua aplicada no serviço:</label>
+                    <select class="form-control" id="language" required>
+                        <option>Inglês</option>
+                        <option>Espanhol</option>
+                        <option>Francês</option>
+                        <option>Português (pt-br)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fileUpload">Upload do protótipo:</label>
+                    <input type="file" class="form-control-file" id="fileUpload" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+                </div>
+                <div class="form-group">
+                    <label>Linguagens preferidas:</label>
+                    <div>
+                        <input type="checkbox" id="lang1" value="JavaScript"> <label for="lang1">JavaScript</label>
+                        <input type="checkbox" id="lang2" value="Python"> <label for="lang2">Python</label>
+                        <input type="checkbox" id="lang3" value="Java"> <label for="lang3">Java</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de banco de dados recomendado:</label>
+                    <div>
+                        <input type="radio" id="sql" name="database" value="SQL" required> <label for="sql">SQL</label>
+                        <input type="radio" id="nosql" name="database" value="NoSQL"> <label for="nosql">NoSQL</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meetingShift">Turno de preferência para reuniões:</label>
+                    <select class="form-control" id="meetingShift" required>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="meetingTime">Melhor horário sugerido para reuniões:</label>
+                    <input type="time" class="form-control" id="meetingTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="deliveryDate">Previsão de entrega desejada:</label>
+                    <input type="date" class="form-control" id="deliveryDate" required>
+                </div>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </fieldset>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
